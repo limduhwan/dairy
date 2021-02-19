@@ -1,0 +1,51 @@
+{
+  "extends": [
+//    "react-app",
+    "airbnb",
+    "plugin:react/recommended",
+    "plugin:jsx-control-statements/recommended"
+  ],
+  "plugins":
+  [
+    "import",
+    "react",
+    "jsx-control-statements"
+  ],
+  "settings":
+  {
+    "react":
+    {
+      "pragma": "React",
+      "version": "detect"
+    }
+  },
+  "rules": {
+    "react/jsx-filename-extension": 0,
+    "react/jsx-props-no-spreading": 0,
+    "react/state-in-constructor": 0,
+    "react-hooks/exhaustive-deps": 0,
+    "max-len": ["error", { "code": 150, "ignoreComments": true }],
+    "class-methods-use-this": 0,
+    "consistent-return": 0,
+    "no-underscore-dangle": "off",
+    "no-restricted-syntax": "off",
+    "object-curly-newline": "off",
+    "camelcase": "off",
+    "prefer-destructuring": "off",
+    "no-restricted-properties": "off",
+    "react/react-in-jsx-scope": 2,
+    "import/no-unresolved": 0,
+    "import/prefer-default-export": "off",
+    "react/jsx-wrap-multilines": [ 2,
+      {
+        "declaration": false,
+        "assignment": false,
+        "return": true
+      }],
+    "jsx-a11y/mouse-events-have-key-events": "off",
+    "jsx-a11y/accessible-emoji": "off",
+    "jsx-control-statements/jsx-use-if-tag": "off",
+    "no-continue": "off",
+    "linebreak-style": "off"
+  }
+}
